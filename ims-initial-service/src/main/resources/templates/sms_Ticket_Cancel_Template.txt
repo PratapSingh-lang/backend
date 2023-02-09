@@ -1,0 +1,3 @@
+Dear Sir/Madam, 
+Your ticket(s) to witness the <<EVENT_NAME>> on <<EVENT_DAY_AND_DATE>> at <<EVENT_VENUE>> has/have been cancelled due to either invalid ID proof or other reasons. You can check the status of your ticket(s) on https://www.aamantran.mod.gov.in
+– Ministry of Defence

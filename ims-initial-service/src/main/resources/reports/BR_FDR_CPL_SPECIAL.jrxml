@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="North" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0565bde8-cf17-4303-a89b-6f16709354a5">
+	<parameter name="vehicleNo" class="java.lang.String"/>
+	<parameter name="cplNo" class="java.lang.String"/>
+	<parameter name="passNo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="572" splitType="Stretch">
+			<image>
+				<reportElement x="80" y="0" width="580" height="572" uuid="113b1a06-8a5d-44e7-84b3-dca9ca164658"/>
+				<imageExpression><![CDATA["pass/templates/BR_FDR_CPL_SPECIAL_RED.png"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="140" y="480" width="210" height="26" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="f16e645c-28cd-4bb3-9cef-40046e1d0bf5">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cplNo}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="350" y="480" width="250" height="26" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="c39b6f5b-9ff6-4260-9825-fbd0d1b695d3">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{passNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="140" y="460" width="210" height="20" forecolor="#FFFFFF" uuid="28ef7bbd-d9e1-4d82-978d-02f40c903429"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CPL No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="460" width="250" height="20" forecolor="#FFFFFF" uuid="8f99bb9f-5c3d-412c-a6e6-5c735de3ee77">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Invitation No:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="260" width="375" height="46" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="0699518d-3561-4c0b-a1a4-8ea508ac4f75">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="35" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{vehicleNo}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="572">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="80" y="50" width="500" height="500" uuid="760e1b82-792f-4392-8e66-cdc3e9fa5e1c">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["pass/templates/BR_FDR_CPL_SPECIAL_RED_Instructions.png"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>

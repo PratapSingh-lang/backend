@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BR_Invite_RedTip" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="55c9f6a2-be14-41e1-b773-6a23cf941e0d">
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="controlNo" class="java.lang.String"/>
+	<parameter name="qrCode" class="java.io.InputStream"/>
+	<parameter name="enclosureNo" class="java.lang.String"/>
+	<parameter name="blockNo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{blockNo}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="gate" class="java.lang.String"/>
+	<parameter name="qrCode1" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="572" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="10" width="750" height="460" uuid="a32b8fc8-ba09-49b2-94ac-7d3f42d0a83e">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["pass/templates/BR_Invite_YellowTip.png"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="30" y="160" width="685" height="30" forecolor="#0C3C7A" backcolor="#0C3C7A" uuid="f3536827-1c28-4aa0-8ab0-72b8ce283e23">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="580" y="41" width="80" height="80" uuid="21debbd4-6b85-43c8-9632-b715de76f92d">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{qrCode}]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="525" y="120" width="190" height="38" forecolor="#0C3C7A" backcolor="#0C3C7A" uuid="f136bdba-7bc9-49de-9a62-fb828a3d9ab6">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{controlNo}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="60" y="66" width="130" height="30" forecolor="#0C3C7A" backcolor="#0C3C7A" uuid="d47c348b-a2d1-4f2a-a447-7c2d5a05e6a7">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box padding="3">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="17" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Block : " +  $P{blockNo}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="60" y="96" width="130" height="29" forecolor="#0C3C7A" backcolor="#0C3C7A" uuid="d8bb0d48-9226-412e-b8c7-8482ee4a3c52">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box padding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Gate: " + $P{gate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="326" y="550" width="100" height="19" uuid="2131b646-dfa2-4522-b1e1-544af00cbb9c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " +  $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="572">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="0" y="10" width="750" height="460" uuid="1e30e90c-de00-466f-8db1-0093c515e04e">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["pass/templates/BR_Invite_YellowTip_Hindi.png"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="30" y="160" width="685" height="30" forecolor="#0C3C7A" backcolor="#0C3C7A" uuid="ad7a4f60-9508-42b4-9e2f-bda535e4aa17">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="580" y="41" width="80" height="80" uuid="108ed652-fd92-4519-b55a-ff535bbd70d5">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{qrCode1}]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="525" y="120" width="190" height="38" forecolor="#0C3C7A" backcolor="#0C3C7A" uuid="f2680b83-e4b6-4464-ad42-57f77d9c65ae">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{controlNo}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="60" y="66" width="130" height="30" forecolor="#0C3C7A" backcolor="#0C3C7A" uuid="72f0adcb-8dfb-4df6-a25b-6ab248e99cf2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box padding="3">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="17" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Block : " +  $P{blockNo}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="60" y="96" width="130" height="29" forecolor="#0C3C7A" backcolor="#0C3C7A" uuid="826a9232-9bb4-46b2-b5ef-056aa8a1097b">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box padding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#0C3C7A"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Gate: " + $P{gate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="326" y="550" width="100" height="19" uuid="693ac5b8-0195-4aa3-b9d5-3eca62271697"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " +  $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="572">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="250" y="30" width="275" height="460" uuid="877eeada-ad15-4bbe-aaf1-1fcd4c449f05">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["pass/templates/RDC_FD_ENGLISH.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="326" y="550" width="100" height="19" uuid="08e604c6-fa76-4bb0-9706-b9e00352399b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " +  $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="572">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="250" y="30" width="275" height="460" uuid="0fb49af6-6007-44de-9b7e-bd3b7538fae0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["pass/templates/RDC_FD_HINDI.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="326" y="550" width="100" height="19" uuid="acc1c1e3-cdcd-4de8-a189-dcf0448fbfcd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " +  $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="572">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="150" y="15" width="420" height="540" uuid="4d535cfd-e56c-459d-8a94-1660df4eb7e0">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["pass/templates/BR_Advisory.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="326" y="550" width="100" height="19" uuid="f43368d0-613f-4b5a-8618-1647e304da73"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " +  $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="572">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="150" y="15" width="420" height="540" uuid="94874c72-536e-4de1-998a-d89684de7abf">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["pass/templates/BR_Instructions.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="326" y="550" width="100" height="19" uuid="4e88c29f-e6a2-4df9-81e7-e35e50102dc2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " +  $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="572">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="150" y="15" width="420" height="540" uuid="62113774-9861-4541-ae03-90c047fbeadb">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["pass/templates/BR_Instructions_HINDI.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="326" y="550" width="100" height="19" uuid="649a629c-a3c1-4ca3-a66b-5d2723f5e926"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " +  $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="572">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="20" y="30" width="700" height="500" uuid="d28c3af7-2231-452e-b591-c09bf41ce08f">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["pass/templates/BR_MAP.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="326" y="550" width="100" height="19" uuid="f5530e04-e2c1-496b-a30c-f11ac8b4fd76"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " +  $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,4 @@
+Dear User, 
+OTP to login to the portal www.aamantran.mod.gov.in is <<OTP>> valid for <<XX>> minutes. 
+From: 
+Ministry of Defence.

@@ -1,0 +1,4 @@
+Dear User, 
+OTP to reset your password for www.aamantran.mod.gov.in is <<OTP>> valid for <<XX>> minutes. 
+From: 
+Ministry of Defence

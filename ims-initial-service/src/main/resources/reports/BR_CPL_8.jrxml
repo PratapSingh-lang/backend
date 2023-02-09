@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CPL_BTR" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="23f6dcc9-09a8-433e-973b-7e0ff131747a">
+	<parameter name="vehicleNo" class="java.lang.String"/>
+	<parameter name="cplNo" class="java.lang.String"/>
+	<parameter name="passNo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="572" splitType="Stretch">
+			<image>
+				<reportElement x="90" y="0" width="574" height="572" uuid="8118b08b-e77f-4ad5-8a29-9eacc5a548d3"/>
+				<imageExpression><![CDATA["pass/templates/BR_CPL_8.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="157" y="290" width="440" height="62" forecolor="#374B67" backcolor="#0C3C7A" uuid="fedb1057-6217-4fe9-9a62-a769928f2c17">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="45" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{vehicleNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="230" y="433" width="299" height="15" forecolor="#374B67" uuid="775273c1-48c1-4eeb-b3dc-6252519c044a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CPL No:]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="200" y="448" width="360" height="20" forecolor="#374B67" backcolor="#0C3C7A" uuid="fce233e5-aabf-402a-b0ab-d056a546f57e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cplNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="230" y="470" width="298" height="15" forecolor="#374B67" uuid="a753bd89-9ff2-448b-8972-4de435113ae3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Invitation No : ]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="260" y="485" width="240" height="50" forecolor="#374B67" backcolor="#0C3C7A" uuid="d9b0ad3b-4077-4d0f-9c5a-2fbe70b97bc7">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{passNo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

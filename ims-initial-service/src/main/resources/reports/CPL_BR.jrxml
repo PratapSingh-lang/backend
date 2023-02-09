@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CPL_PARKSIDE" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d05c3f77-71bc-4854-b234-8fa8644e0b2c">
+	<parameter name="vehicleNo" class="java.lang.String"/>
+	<parameter name="cplNo" class="java.lang.String"/>
+	<parameter name="passNo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="572" splitType="Stretch">
+			<image>
+				<reportElement x="80" y="0" width="600" height="572" uuid="ae2c2c3e-311e-4fcf-a391-26e1de98f36a"/>
+				<imageExpression><![CDATA["pass/templates/BR_CPL.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="260" y="420" width="240" height="30" uuid="c518db02-aa8f-4d10-b4ce-f489fcf94129"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{vehicleNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="450" width="120" height="50" uuid="d1250951-df29-41cd-a444-1bb4dfafc306"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cplNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="450" width="110" height="50" uuid="3eeb7396-15eb-4f97-86f1-74138ad4e9a1"/>
+				<textElement textAlignment="Left">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{passNo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

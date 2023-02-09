@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Parking" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ea5ac97e-0c10-46fe-bc09-709e38d302e3">
+	<parameter name="vehicleNo" class="java.lang.String"/>
+	<parameter name="passNo" class="java.lang.String"/>
+	<parameter name="cplNo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="572" splitType="Stretch">
+			<image>
+				<reportElement x="80" y="0" width="590" height="560" uuid="d1186586-39e4-46f3-aa6e-8abb81749304"/>
+				<imageExpression><![CDATA["pass/templates/MD_CPL_RED.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="170" y="250" width="390" height="50" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="f851c285-9932-4876-ba08-049253415a58">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="35" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{vehicleNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="141" y="450" width="210" height="20" forecolor="#FFFFFF" uuid="419bf5f5-1061-44fd-8cf0-6f8f99c374ba">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[CPL No:]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="141" y="470" width="210" height="40" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="9a5f455f-25fb-43d8-a8fd-85f731436910">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cplNo}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="353" y="470" width="250" height="40" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="023432bd-a224-449a-aa26-7742c0eb1e9d">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{passNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="353" y="450" width="250" height="20" forecolor="#FFFFFF" uuid="8f51ba33-1535-420b-a308-52a0ea3eed89">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Invitation No:]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

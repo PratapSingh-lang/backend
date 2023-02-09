@@ -1,0 +1,3 @@
+Dear Sir/Madam,
+Ticket(s) has/have been issued to witness the <<EVENT_NAME>> on <<EVENT_DAY_AND_DATE>> at <<EVENT_VENUE>>. You can download your ticket(s) from https://www.aamantran.mod.gov.in
+– Ministry of Defence

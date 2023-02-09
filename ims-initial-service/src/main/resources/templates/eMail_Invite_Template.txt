@@ -1,0 +1,23 @@
+Dear Sir/Madam,
+
+The Ministry of Defence requests the pleasure of your presence at the <<EVENT_NAME>> on <<EVENT_DAY_AND_DATE>> at <<EVENT_VENUE>>.
+
+As part of Government of India's initiative to digitalize the invitation process, an e-invitation is being issued for the above event. Please refer to the instructions as enclosed with the pass. 
+
+You can download your E-invitation from www.aamantran.mod.gov.in  (Please refer to the instructions indicated below to download the pass)
+
+You are requested to provide your confirmation by accepting or regretting on the www.aamantran.mod.gov.in . (Please refer to the instructions indicated below)
+
+You are also requested to either show printout or soft copy of your e-invitation card at the entry gate with a valid Govt. ID proof. Your card will be scanned/authenticated through scanners available with the security personnel. 
+
+This is an auto generated email, please don't reply to this email.
+
+Regards
+Under Secretary (Ceremonial)/ MoD
+Tel. No. 23016547, 23012904
+
+Instructions to download E-pass/RSVP-
+1.	Login to https://www.aamantran.mod.gov.in/ with your mobile number
+2.	Enter OTP
+3.	Got to "My Invitations"
+4.	Download your pass/ Accept or Regret.
